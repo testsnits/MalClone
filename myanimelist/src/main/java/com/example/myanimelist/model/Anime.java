@@ -43,11 +43,11 @@ public class Anime  {
     @JsonProperty("anime_id")
     public Long animeId;
     @JsonProperty("anime_studios")
-    public Object animeStudios;
+    public String animeStudios;
     @JsonProperty("anime_licensors")
-    public Object animeLicensors;
+    public String animeLicensors;
     @JsonProperty("anime_season")
-    public Object animeSeason;
+    public String animeSeason;
     @JsonProperty("anime_total_members")
     public Integer animeTotalMembers;
     @JsonProperty("anime_total_scores")

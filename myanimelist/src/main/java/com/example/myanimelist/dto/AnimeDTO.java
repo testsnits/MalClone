@@ -25,9 +25,9 @@ public class AnimeDTO {
     public Integer animeNumEpisodes;
     public Integer animeAiringStatus;
     public Long animeId;
-    public Object animeStudios;
-    public Object animeLicensors;
-    public Object animeSeason;
+    public String animeStudios;
+    public String animeLicensors;
+    public String animeSeason;
     public Integer animeTotalMembers;
     public Integer animeTotalScores;
     public Double animeScoreVal;
@@ -38,6 +38,7 @@ public class AnimeDTO {
     public List<GenreDTO> genres;
     public List<DemographicDTO> demographics;
     public String titleLocalized;
+    public String animeUrl;
     public String animeImagePath;
     public Boolean isAddedToList;
     public String animeMediaTypeString;
