@@ -1,6 +1,7 @@
 package com.example.myanimelist.service;
 
 import com.example.myanimelist.dto.AnimeDTO;
+import com.example.myanimelist.helper.Helper;
 import com.example.myanimelist.model.Anime;
 import com.example.myanimelist.model.Demographic;
 import com.example.myanimelist.model.Genre;
@@ -31,15 +32,15 @@ public class AnimeServiceImpl implements AnimeService{
 
         List<Anime> animes = animeList.stream()
                 .map(animeDTO -> Anime.builder()
-                        .score(animeDTO.getScore())
-                        .tags(animeDTO.getTags())
-                        .isRewatching(animeDTO.getIsRewatching())
+                        .score(animeDTO.score)
+                        .tags(animeDTO.tags)
+                        .isRewatching(animeDTO.isRewatching)
                         .numWatchedEpisodes(animeDTO.getNumWatchedEpisodes())
                         .createdAt(animeDTO.getCreatedAt())
                         .updatedAt(animeDTO.getUpdatedAt())
                         .animeTitle(animeDTO.getAnimeTitle())
                         .animeTitleEng(animeDTO.getAnimeTitleEng())
-                        .animeNumEpisodes(animeDTO.getNumWatchedEpisodes())
+                        .animeNumEpisodes(animeDTO.getAnimeNumEpisodes())
                         .animeAiringStatus(animeDTO.getAnimeAiringStatus())
                         .animeId(animeDTO.getAnimeId())
                         .animeStudios(animeDTO.getAnimeStudios())

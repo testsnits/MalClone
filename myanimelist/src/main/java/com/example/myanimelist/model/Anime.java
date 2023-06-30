@@ -17,6 +17,7 @@ import java.util.List;
 public class Anime  {
 
     //ID is animeId
+
     @JsonProperty("status")
     public Integer status;
     @JsonProperty("score")
