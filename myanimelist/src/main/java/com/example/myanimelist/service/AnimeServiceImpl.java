@@ -1,7 +1,6 @@
 package com.example.myanimelist.service;
 
 import com.example.myanimelist.dto.AnimeDTO;
-import com.example.myanimelist.helper.Helper;
 import com.example.myanimelist.model.Anime;
 import com.example.myanimelist.model.Demographic;
 import com.example.myanimelist.model.Genre;
@@ -9,7 +8,6 @@ import com.example.myanimelist.repository.AnimeRepo;
 import com.example.myanimelist.repository.DemographicRepo;
 import com.example.myanimelist.repository.GenreRepo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,9 +30,10 @@ public class AnimeServiceImpl implements AnimeService{
 
         List<Anime> animes = animeList.stream()
                 .map(animeDTO -> Anime.builder()
-                        .score(animeDTO.score)
-                        .tags(animeDTO.tags)
-                        .isRewatching(animeDTO.isRewatching)
+                        .status(animeDTO.getStatus())
+                        .score(animeDTO.getScore())
+                        .tags(animeDTO.getTags())
+                        .isRewatching(animeDTO.getIsRewatching())
                         .numWatchedEpisodes(animeDTO.getNumWatchedEpisodes())
                         .createdAt(animeDTO.getCreatedAt())
                         .updatedAt(animeDTO.getUpdatedAt())

@@ -1,5 +1,6 @@
 package com.example.myanimelist.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,6 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DemographicDTO {
-    private Long id;
-    private String name;
+    @JsonProperty("id")
+    public Long id;
+    @JsonProperty("name")
+    public String name;
 }

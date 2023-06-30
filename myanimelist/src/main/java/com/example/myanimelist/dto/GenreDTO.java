@@ -1,5 +1,6 @@
 package com.example.myanimelist.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GenreDTO {
-    private Long id;
-    private String name;
+    @JsonProperty("id")
+    public Long id;
+    @JsonProperty("name")
+    public String name;
 }
