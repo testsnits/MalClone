@@ -1,9 +1,6 @@
-package com.example.myanimelist.dto;
+package com.example.animetracker.dto;
 
-import com.example.myanimelist.model.Demographic;
-import com.example.myanimelist.model.Genre;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Column;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.example.myanimelist.repository;
+package com.example.animetracker.repository;
 
-import com.example.myanimelist.model.Genre;
+import com.example.animetracker.model.Genre;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GenreRepo extends JpaRepository<Genre, Long> {

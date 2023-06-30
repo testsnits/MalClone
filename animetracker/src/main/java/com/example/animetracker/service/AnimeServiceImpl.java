@@ -1,12 +1,12 @@
-package com.example.myanimelist.service;
+package com.example.animetracker.service;
 
-import com.example.myanimelist.dto.AnimeDTO;
-import com.example.myanimelist.model.Anime;
-import com.example.myanimelist.model.Demographic;
-import com.example.myanimelist.model.Genre;
-import com.example.myanimelist.repository.AnimeRepo;
-import com.example.myanimelist.repository.DemographicRepo;
-import com.example.myanimelist.repository.GenreRepo;
+import com.example.animetracker.dto.AnimeDTO;
+import com.example.animetracker.model.Anime;
+import com.example.animetracker.model.Demographic;
+import com.example.animetracker.model.Genre;
+import com.example.animetracker.repository.AnimeRepo;
+import com.example.animetracker.repository.DemographicRepo;
+import com.example.animetracker.repository.GenreRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

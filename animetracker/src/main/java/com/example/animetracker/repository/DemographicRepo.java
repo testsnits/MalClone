@@ -1,6 +1,6 @@
-package com.example.myanimelist.repository;
+package com.example.animetracker.repository;
 
-import com.example.myanimelist.model.Demographic;
+import com.example.animetracker.model.Demographic;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DemographicRepo extends JpaRepository<Demographic, Long> {

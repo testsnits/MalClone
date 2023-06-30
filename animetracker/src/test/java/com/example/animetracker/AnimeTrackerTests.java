@@ -1,10 +1,10 @@
-package com.example.myanimelist;
+package com.example.animetracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyanimelistApplicationTests {
+class AnimeTrackerTests {
 
 	@Test
 	void contextLoads() {

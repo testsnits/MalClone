@@ -1,7 +1,7 @@
-package com.example.myanimelist.service;
+package com.example.animetracker.service;
 
-import com.example.myanimelist.dto.AnimeDTO;
-import com.example.myanimelist.model.Anime;
+import com.example.animetracker.dto.AnimeDTO;
+import com.example.animetracker.model.Anime;
 
 import java.util.List;
 

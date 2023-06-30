@@ -1,4 +1,4 @@
-package com.example.myanimelist.model;
+package com.example.animetracker.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
