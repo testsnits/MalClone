@@ -1,19 +1,23 @@
 package com.example.myanimelist.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Embeddable
+@Entity
 public class Demographic {
 
-    @Column(name="demographic_id")
-    private Long id;
-    @Column(name="demographic_name")
-    private String name;
+    @Id
+    @JsonProperty("id")
+    public Long id;
+    @JsonProperty("name")
+    public String name;
 
 }
